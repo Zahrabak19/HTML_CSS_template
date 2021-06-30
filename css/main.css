@@ -1,0 +1,322 @@
+/* CSS Variables */
+:root{
+    --main-color: #ff3838;
+    --secondary-color:#ff4d4d;
+    --new-color:rgba(255, 255, 255, 0.25);
+    --section-color: rgba(255, 255, 255, 0.40);
+    --section-NEW-color: rgba(255, 255, 255, 1);
+    --section-background: #e6e1e1;
+  }
+ /*global rules start*/
+ *{
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ 
+ }
+ html{
+     overflow-x: hidden;
+ }
+ body{
+   font-family: 'Josefin Sans', sans-serif;
+ }
+ .container{
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ a{
+   text-decoration: none;
+ }
+ ul{
+   list-style: none;
+ }
+ @media (min-width: 768px) {
+   .container{
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container{
+     width: 970px;
+   }
+ }
+ @media (min-width: 1200px) {
+   .container{
+     width: 1170px;
+   }
+ }
+ header{
+    padding: 20px 10px;
+    background-color: #000;
+  
+  }
+
+.blog-2{
+    padding: 100px 0;
+}
+.blog-2 .blog-pic{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+   
+}
+.blog-2 .blog-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    
+}
+.blog-2 .blog-2-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.blog-2 .blog-2-info p{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.blog-2 .blog-2-info p a{
+    color: #000;
+    font-weight: 900;
+}
+.blog-2 .blog-2-info span {
+    font-size: 19px;
+}
+.blog-2 .blog-2-info span,
+.blog-2 .blog-2-info span a
+ {
+    color: var(--main-color);
+}
+.blog-2 .blog-2-info span .color
+ {
+    color: #000;
+}
+.blog-2 .blog-2-container p{
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 17px;
+    color: #616060;
+}
+.comment .comment-content{
+    padding: 40px 0;
+}
+.comment .comment-content h1{
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+.comment .comment-content p{
+    color: #575555;
+}
+.comment-form .form-vert {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.comment-form .form-vert input {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 20px;
+}
+.comment-form .form-horz {
+    width: 100%;
+    margin-top: 40px;
+    height: 200px;
+    padding: 20px 20px;
+    background-color: #e6e1e1;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.comment-form .form-horz input{
+    border: none;
+    outline: none;
+    background-color: #e6e1e1;
+
+}
+.comment-form  .btn{
+    background: linear-gradient(to right, #ff3838, #ff6e6e 20px, #ff6e6e 13px, #ff3838 38px, #ff3838 40%, #fa2121 60%);
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #FFF;
+    border-radius: 15px;
+}
+/******************************/
+.booking-section{
+    padding: 100px 0;
+}
+.booking-section .content h2,
+.contact-content .content h2
+{
+  margin-bottom: 20px;
+  color: var(--main-color);
+
+}
+.booking-section .content h1,
+.contact-content .content h1
+{
+  margin-bottom: 20px;
+  font-size: 45px;
+  
+}
+.booking-section .content p,
+.contact-content .content p
+{
+    margin-bottom: 20px;
+    font-size: 19px;
+    color: rgb(114, 113, 113);
+}
+ .booking-section form p{
+     margin-bottom: 20px;
+     font-size: 17px;
+     font-weight: 700;
+ }
+.booking-section .form-vert,
+.booking-section .form-horz,
+.booking-section .form-main
+ {
+     display: flex;
+     margin-bottom: 20px;
+}
+.booking-section .form-main,
+.booking-section .form-horz
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.booking-section .form-vert
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+.booking-section .form-vert input {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 20px;
+}
+.booking-section .form-horz input {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 20px;
+}
+.booking-section .form-main .form-control
+{
+    height: 50px;
+    padding: 0 20px ;
+    border: none;
+    margin-right: 10px;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 20px;
+}
+.booking-section .btn,
+.contact-content .button .btn
+{
+    background: linear-gradient(to right, #ff3838, #ff6e6e 20px, #ff6e6e 13px, #ff3838 38px, #ff3838 40%, #fa2121 60%);
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 10px 25px;
+    color: #FFF;
+    border-radius: 15px;
+}
+/********************************
+**************************************/
+.contact{
+    padding: 100px 0;
+}
+.contact .container{
+    /*display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .contact-content{
+    flex: 1 1 700px;
+}
+.contact .touch{
+    flex: 1 1 200px;
+    background-color: var(--main-color);
+    color: #FFF;
+    padding: 20px 30px;
+    margin-left: 20px;
+}
+.contact .touch h1{
+    color: #FFF;
+    padding: 20px 30px;
+    font-weight: 900;
+    font-size: 30px;
+}
+.contact .touch p{
+    color: #FFF;
+    padding: 20px 0 10px 0;
+    font-size: 17px;
+}
+.contact hr{
+    width: 220px;
+    margin-bottom: 20px;
+}
+.contact .touch .list{
+    text-align: center;
+}
+.contact-content .form{
+    margin-top: 40px;
+}
+.contact-content .form-group input {
+    height: 50px;
+    padding: 0 20px;
+    width: 320px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 10px;
+    font-size: 16px;
+
+}
+.contact-content .form-group input:last-child{
+    margin-left: 20px;
+}
+.contact-content .form-group textarea {
+    height: 150px;
+    padding: 20px 20px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    outline: none;
+    background-color: #e6e1e1;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+    .contact-content .form-group input:last-child{
+        margin-left: 0;
+    }
+  }
+  .contact-content .button{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+  }
+ 
